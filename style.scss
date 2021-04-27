@@ -55,6 +55,9 @@ nav{
     margin: 1.25rem 8%;
     width: 40%;
 }
+.redes-sociales{
+    display: none;
+}
 
 .cont-formulario {
     margin: 1.25rem 8%;
@@ -200,10 +203,39 @@ footer {
         background-position-x: 300px;
         background-position-y: 0px;
     }
-    footer ul li{
-        margin: 0 1rem;
-        i{
-            font-size: 3rem;
+    footer{
+        display: none;
+    }
+    .text-parrafo{
+        display: none;
+    }
+    .redes-sociales{
+        display: flex;
+        overflow: hidden;
+        align-items: center;
+        height: 80px;
+
+        ul{
+            width: 100%;
+            height: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+
+            li{
+                list-style: none;
+                i{
+                    color: $color-desactivado;
+                    font-size: 3rem!important;
+                }
+                i:hover{
+                    transform: scale(2) rotate(360deg);
+                    -webkit-transition: .3s all ease-in;
+                    -o-transition: .3s all ease-in;
+                    transition: .3s all ease-in;
+                    color: $colo-azul;
+                }
+            }
         }
     }
     .cont-video{
@@ -227,4 +259,16 @@ footer {
     //     display: flex;
 
     // }
+}
+@media screen and(max-width:400px){
+    .cont-titulo h1{
+        font-size: 3rem;
+        line-height: 38px;
+        span{
+            font-size: 3rem;
+        }
+    }
+    .cont-formulario{
+        margin-top: -10px;
+    }
 }

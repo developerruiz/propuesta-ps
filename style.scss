@@ -1,0 +1,230 @@
+$colo-azul: #004ca1;
+$color-naranja: #d48515;
+$color-desactivado: #d3d3d3;
+$color-placeholder: #bcbcbc;
+
+
+$fuente-principal: 'Roboto',
+sans-serif;
+
+* {
+    margin: 0;
+    padding: 0;
+    left: 0;
+    top: 0;
+    font-family: $fuente-principal;
+    font-size: 14px;
+}
+
+h1 {
+    font-family: $fuente-principal;
+    font-size: 7rem;
+}
+
+body {
+    background-image: url(img/banner-mancha.png);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: 120%;
+    background-position-y: -150px;
+    
+
+    
+}
+nav{
+    margin-left: 7%;
+}
+
+.cont-titulo {
+
+    display: block;
+    margin: 4% 8% 1.25rem;
+
+    h1 {
+        line-height: 6.475rem;
+        font-weight: 700;
+    }
+}
+
+.cont-texto-sec {
+    margin: 1.25rem 8%;
+}
+
+.text-parrafo {
+    margin: 1.25rem 8%;
+    width: 40%;
+}
+
+.cont-formulario {
+    margin: 1.25rem 8%;
+    width: 80%;
+    height: 60px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    form {
+        display: flex;
+
+        input[type=email] {
+            background: #efefef;
+            height: 40px;
+            width: 250px;
+            border-radius: 15px 0 0 15px;
+            border: 1px solid $color-desactivado;
+        }
+
+        input[type=email]::placeholder {
+            color: $color-placeholder;
+            padding: 5px 5px 5px 15px;
+        }
+        button {
+            background: $color-naranja;
+            border: 1px solid $color-naranja;
+            height: 40px;
+            width: 150px;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 0 15px 15px 0;
+            color: #fff;
+        }
+    }
+}
+span {
+    color: $colo-azul;
+    font-size: 7rem;
+}
+.cont-video {
+    position: absolute;
+    width: 450px;
+    height: 280px;
+    top: 24%;
+    border-radius: 30px;
+    left: 55%;
+    z-index: 99;
+    background: #fff;
+    box-shadow: 0 5px 16px rgba(0, 0, 0, 0.50);
+    overflow: hidden;
+}
+li {
+    a {
+        i {
+            font-size: 4.5rem;
+        }
+    }
+}
+
+footer {
+    width: 100%;
+    height: 140px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+    ul {
+        display: flex;
+
+        li {
+            list-style: none;
+            margin: 0 6rem;
+
+            i {
+                color: $color-desactivado;
+                -webkit-transition: .3s all ease-in;
+                -o-transition: .3s all ease-in;
+                transition: .3s all ease-in;
+                color: $color-desactivado;
+            }
+
+            i:hover {
+                transform: scale(2) rotate(360deg);
+                -webkit-transition: .3s all ease-in;
+                -o-transition: .3s all ease-in;
+                transition: .3s all ease-in;
+                color: $colo-azul;
+            }
+        }
+    }
+}
+@media screen and(max-width:1000px){
+    body{
+        background-position-x: 500px;
+        background-position-y: 0;
+    }
+    .navbar{
+        justify-content: center;
+        margin: 0;
+    }
+    .cont-titulo h1{
+        text-align: center;
+        font-size: 4rem;
+        line-height: 4rem;
+        span{
+            font-size: 4rem;
+        }
+    }
+    .cont-texto-sec{
+        text-align: center;
+    }
+    .text-parrafo{
+        width: 80%;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .cont-formulario{
+        width: 100%;
+        justify-content: center;
+        margin: 30px 0;
+    }
+    .cont-video {
+        position:relative;
+        left: 50%;
+        transform: translate(-50%);
+    }  
+    footer{
+        ul{
+            li{
+                margin: 0 3rem;
+            }
+        }
+    } 
+}
+@media screen and (max-width:700px){
+    body{
+        background-position-x: 300px;
+        background-position-y: 0px;
+    }
+    footer ul li{
+        margin: 0 1rem;
+        i{
+            font-size: 3rem;
+        }
+    }
+    .cont-video{
+        width: 350px;
+        height: 200px;
+    }
+    .cont-formulario form input[type=email]{
+        width: 180px;
+
+    }
+    .cont-formulario form button{
+        width: 130px;
+    }
+    .navbar-brand{
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+    // body div:nth-child(1n+5){
+    //     background: #004ca1;
+    //     display: flex;
+
+    // }
+}

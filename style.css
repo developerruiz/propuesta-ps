@@ -96,8 +96,8 @@ nav {
   background: #d48515;
   margin-top: -40px;
   border-radius: 40px;
-  width: 70px;
-  height: 70px;
+  width: 60px;
+  height: 60px;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -427,7 +427,7 @@ footer ul li i:hover {
     font-size: 3rem;
   }
   .cont-formulario {
-    margin-top: -20px;
+    margin-top: -25px;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -244,6 +244,7 @@ nav{
         margin-top: 65%;
         text-align: center;
         padding: 5px 0 30px;
+        z-index: 1;
     }
 }
 li {
@@ -262,6 +263,7 @@ footer {
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    z-index: 9;
 
     ul {
         display: flex;
@@ -284,6 +286,7 @@ footer {
                 -o-transition: .3s all ease-in;
                 transition: .3s all ease-in;
                 color: $colo-azul;
+                z-index: 99999;
             }
         }
     }

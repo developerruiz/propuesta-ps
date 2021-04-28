@@ -9,7 +9,12 @@
 
 h1 {
   font-family: "Roboto", sans-serif;
-  font-size: 7rem;
+  font-size: 6rem;
+}
+
+span {
+  color: #004ca1;
+  font-size: 6rem;
 }
 
 body {
@@ -27,11 +32,11 @@ nav {
 
 .cont-titulo {
   display: block;
-  margin: 4% 8% 1.25rem;
+  margin: 3% 8% 1.25rem;
 }
 
 .cont-titulo h1 {
-  line-height: 6.475rem;
+  line-height: 5.475rem;
   font-weight: 700;
 }
 
@@ -231,11 +236,6 @@ nav {
 .btn-modal i {
   font-size: 18px;
   color: #fff;
-}
-
-span {
-  color: #004ca1;
-  font-size: 7rem;
 }
 
 .cont-video {

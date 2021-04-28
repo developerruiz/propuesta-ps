@@ -64,48 +64,35 @@ nav {
           justify-content: flex-start;
 }
 
-.cont-formulario form {
+.cont-modal {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.829);
+  position: fixed;
+  z-index: 999999;
+  display: none;
+}
+
+.cont-modal .ventana-modal {
+  width: 450px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+.cont-modal .ventana-modal .btn-cerrar {
+  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.cont-formulario form input[type=email] {
-  background: #efefef;
-  height: 40px;
-  width: 250px;
-  border-radius: 15px 0 0 15px;
-  border: 1px solid #d3d3d3;
-}
-
-.cont-formulario form input[type=email]::-webkit-input-placeholder {
-  color: #bcbcbc;
-  padding: 5px 5px 5px 15px;
-}
-
-.cont-formulario form input[type=email]:-ms-input-placeholder {
-  color: #bcbcbc;
-  padding: 5px 5px 5px 15px;
-}
-
-.cont-formulario form input[type=email]::-ms-input-placeholder {
-  color: #bcbcbc;
-  padding: 5px 5px 5px 15px;
-}
-
-.cont-formulario form input[type=email]::placeholder {
-  color: #bcbcbc;
-  padding: 5px 5px 5px 15px;
-}
-
-.cont-formulario form button {
+  margin-left: 93%;
   background: #d48515;
-  border: 1px solid #d48515;
-  height: 40px;
-  width: 150px;
-  margin: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  margin-top: -40px;
+  border-radius: 40px;
+  width: 70px;
+  height: 70px;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -113,7 +100,136 @@ nav {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border-radius: 0 15px 15px 0;
+  font-size: 30px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.cont-modal .ventana-modal form {
+  background: #fff;
+  width: 100%;
+  padding: 10px 0;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.493);
+          box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.493);
+}
+
+.cont-modal .ventana-modal .form {
+  width: 100%;
+  margin: auto;
+}
+
+.cont-modal .ventana-modal form .grupo {
+  position: relative;
+  margin: 45px 30px;
+}
+
+.cont-modal .ventana-modal input,
+.cont-modal .ventana-modal textarea {
+  background: fade(#004ca1, 20%);
+  border-radius: 5px;
+  color: #004ca1;
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 100%;
+  height: 40px;
+  border: 1px solid #d3d3d3;
+  border-bottom: 1px solid var(--colorTextos);
+  resize: none;
+}
+
+.cont-modal .ventana-modal input:focus,
+.cont-modal .ventana-modal textarea:focus {
+  outline: none;
+  color: #004ca1;
+}
+
+.cont-modal .ventana-modal input:focus ~ label,
+.cont-modal .ventana-modal input:valid ~ label,
+.cont-modal .ventana-modal textarea:focus ~ label,
+.cont-modal .ventana-modal textarea:valid ~ label {
+  position: absolute;
+  top: -18px;
+  font-size: 12px;
+  color: #004ca1;
+}
+
+.cont-modal .ventana-modal label {
+  color: var(--colorTextos);
+  font-size: 16px;
+  position: absolute;
+  left: 5px;
+  top: 10px;
+  -webkit-transition: 0.5s ease all;
+  transition: 0.5s ease all;
+  pointer-events: none;
+}
+
+.cont-modal .ventana-modal input:focus ~ .barra::before,
+.cont-modal .ventana-modal textarea:focus ~ .barra::before {
+  width: 100%;
+}
+
+.cont-modal .ventana-modal .barra {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.cont-modal .ventana-modal .barra::before {
+  content: '';
+  height: 2px;
+  width: 0%;
+  bottom: 0;
+  position: absolute;
+  background: -webkit-gradient(linear, left top, right top, from(#004ca1), to(#153b66));
+  background: linear-gradient(to right, #004ca1, #153b66);
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+  left: 0%;
+}
+
+.cont-modal .ventana-modal button {
+  background: #004ca1;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#004ca1), to(#153b66));
+  background: linear-gradient(to right, #004ca1, #153b66);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  display: block;
+  width: 90%;
+  height: 40px;
+  border: none;
+  color: #fff;
+  border-radius: 4px;
+  font-size: 16px;
+  margin: 10px auto;
+  cursor: pointer;
+}
+
+.btn-modal {
+  width: 200px;
+  height: 50px;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #d48515;
+  padding: 10px 20px;
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.btn-modal i {
+  font-size: 18px;
   color: #fff;
 }
 
@@ -279,12 +395,6 @@ footer ul li i:hover {
     width: 350px;
     height: 200px;
   }
-  .cont-formulario form input[type=email] {
-    width: 180px;
-  }
-  .cont-formulario form button {
-    width: 130px;
-  }
   .navbar-brand {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -293,6 +403,9 @@ footer ul li i:hover {
         -ms-flex-pack: center;
             justify-content: center;
     margin: 0;
+  }
+  .ventana-modal {
+    width: 80% !important;
   }
 }
 
@@ -305,7 +418,7 @@ footer ul li i:hover {
     font-size: 3rem;
   }
   .cont-formulario {
-    margin-top: -15px;
+    margin-top: -20px;
   }
 }
 /*# sourceMappingURL=style.css.map */

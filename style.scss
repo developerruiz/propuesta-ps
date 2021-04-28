@@ -234,8 +234,17 @@ nav{
     z-index: 99;
     background: #fff;
     box-shadow: 0 5px 16px rgba(0, 0, 0, 0.50);
-    overflow: hidden;
-
+    // overflow: hidden;
+    iframe{
+        border-radius: 30px ;
+    }
+    .pagina{
+        width: 100%;
+        position: absolute;
+        margin-top: 65%;
+        text-align: center;
+        padding: 5px 0 30px;
+    }
 }
 li {
     a {

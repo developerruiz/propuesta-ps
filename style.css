@@ -249,7 +249,18 @@ nav {
   background: #fff;
   -webkit-box-shadow: 0 5px 16px rgba(0, 0, 0, 0.5);
           box-shadow: 0 5px 16px rgba(0, 0, 0, 0.5);
-  overflow: hidden;
+}
+
+.cont-video iframe {
+  border-radius: 30px;
+}
+
+.cont-video .pagina {
+  width: 100%;
+  position: absolute;
+  margin-top: 65%;
+  text-align: center;
+  padding: 5px 0 30px;
 }
 
 li a i {

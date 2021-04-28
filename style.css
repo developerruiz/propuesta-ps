@@ -299,6 +299,18 @@ footer ul li i:hover {
   color: #004ca1;
 }
 
+@media screen and (max-width: 2600px) {
+  footer {
+    margin-top: 10%;
+  }
+}
+
+@media screen and (max-width: 1700px) {
+  footer {
+    margin-top: 0;
+  }
+}
+
 @media screen and (max-width: 1000px) {
   body {
     background-position-x: 500px;
@@ -350,9 +362,6 @@ footer ul li i:hover {
     background-position-y: 0px;
   }
   footer {
-    display: none;
-  }
-  .text-parrafo {
     display: none;
   }
   .redes-sociales {

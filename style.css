@@ -3,12 +3,12 @@
   padding: 0;
   left: 0;
   top: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Exo 2", sans-serif;
   font-size: 14px;
 }
 
-h1 {
-  font-family: "Roboto", sans-serif;
+h2 {
+  font-family: "Exo 2", sans-serif;
   font-size: 6rem;
 }
 
@@ -35,9 +35,27 @@ nav {
   margin: 3% 8% 1.25rem;
 }
 
-.cont-titulo h1 {
-  line-height: 5.475rem;
-  font-weight: 700;
+.cont-titulo h2 {
+  display: inline-block;
+  color: #000;
+  background: #fff;
+  mix-blend-mode: multiply;
+  position: relative;
+  line-height: 5rem;
+  font-weight: 800;
+}
+
+.cont-titulo h2:before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, right top, left top, from(blue), color-stop(red), to(yellow));
+  background: linear-gradient(to left, blue, red, yellow);
+  mix-blend-mode: screen;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .cont-texto-sec {
@@ -441,7 +459,7 @@ footer ul li i:hover {
     font-size: 3rem;
   }
   .cont-formulario {
-    margin-top: -30px;
+    margin-top: 0px;
   }
 }
 /*# sourceMappingURL=style.css.map */

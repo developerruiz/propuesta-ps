@@ -1,0 +1,193 @@
+.cont-general-prop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  padding: 40px;
+}
+
+.cont-general-prop .cont-izq {
+  width: 50%;
+  padding: 20px;
+  height: auto;
+}
+
+.cont-general-prop .cont-izq .cont-cards {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 30px 0;
+}
+
+.cont-general-prop .cont-izq .cont-cards .card-izq-img {
+  width: 30%;
+  height: auto;
+}
+
+.cont-general-prop .cont-izq .cont-cards .txt-card-izq {
+  width: 70%;
+  height: auto;
+}
+
+.cont-general-prop .cont-der {
+  width: 50%;
+  height: 100%;
+  padding: 40px;
+}
+
+.cont-general-prop .cont-der .cont-img-der {
+  width: 100%;
+  height: 350px;
+}
+
+.cont-general-prop .cont-der .cont-txt-der {
+  width: 100%;
+  height: auto;
+  margin: 30px 0;
+}
+
+@media screen and (max-width: 900px) {
+  .cont-general-prop {
+    display: block;
+  }
+  .cont-general-prop .cont-izq {
+    width: 100%;
+  }
+  .cont-general-prop .cont-der {
+    width: 100%;
+  }
+  .textos {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .cont-general-prop {
+    padding: 10px;
+  }
+  .cont-general-prop .cont-izq .cont-cards {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  .cont-general-prop .cont-izq .cont-cards .card-izq-img {
+    width: 100%;
+  }
+  .cont-general-prop .cont-izq .cont-cards .txt-card-izq {
+    width: 100%;
+  }
+}
+
+#textos {
+  background: -webkit-gradient(linear, left top, right top, from(#158CCC), color-stop(#158CCC), color-stop(red), color-stop(#FBBA15), to(#FBBA15));
+  background: linear-gradient(to right, #158CCC, #158CCC, red, #FBBA15, #FBBA15);
+}
+
+.textos {
+  width: 60%;
+  height: 160px;
+  overflow: hidden;
+  font-size: 35px;
+  color: #ecf0f1;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: flex;
+  -webkit-animation: textos 25s infinite ease-in-out;
+          animation: textos 25s infinite ease-in-out;
+}
+
+@-webkit-keyframes textos {
+  0% {
+    background-image: url(../img/texto-1.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 1;
+  }
+  15% {
+    opacity: 0;
+  }
+  33% {
+    background-image: url(../img/texto-2.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 1;
+  }
+  45% {
+    opacity: 0;
+  }
+  66% {
+    background-image: url(../img/texto-3.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 1;
+  }
+  88% {
+    opacity: 0;
+  }
+  100% {
+    background-image: url(../img/texto-1.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 1;
+  }
+}
+
+@keyframes textos {
+  0% {
+    background-image: url(../img/texto-1.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 1;
+  }
+  15% {
+    opacity: 0;
+  }
+  33% {
+    background-image: url(../img/texto-2.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 1;
+  }
+  45% {
+    opacity: 0;
+  }
+  66% {
+    background-image: url(../img/texto-3.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 1;
+  }
+  88% {
+    opacity: 0;
+  }
+  100% {
+    background-image: url(../img/texto-1.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=propuestas.css.map */

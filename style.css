@@ -3,12 +3,12 @@
   padding: 0;
   left: 0;
   top: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Exo 2", sans-serif;
   font-size: 14px;
 }
 
-h1 {
-  font-family: "Roboto", sans-serif;
+h2 {
+  font-family: "Exo 2", sans-serif;
   font-size: 6rem;
 }
 
@@ -30,14 +30,43 @@ nav {
   margin-left: 7%;
 }
 
+.imgvota {
+  width: 70%;
+  height: auto;
+  margin: 5% 0;
+}
+
+.imgvota img {
+  width: 100%;
+  height: auto;
+}
+
 .cont-titulo {
   display: block;
   margin: 3% 8% 1.25rem;
 }
 
-.cont-titulo h1 {
-  line-height: 5.475rem;
-  font-weight: 700;
+.cont-titulo h2 {
+  display: inline-block;
+  color: #000;
+  background: #fff;
+  mix-blend-mode: multiply;
+  position: relative;
+  line-height: 5rem;
+  font-weight: 800;
+}
+
+.cont-titulo h2:before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, right top, from(#158CCC), color-stop(#158CCC), color-stop(red), color-stop(#FBBA15), to(#FBBA15));
+  background: linear-gradient(to right, #158CCC, #158CCC, red, #FBBA15, #FBBA15);
+  mix-blend-mode: screen;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .cont-texto-sec {
@@ -371,6 +400,9 @@ footer ul li i:hover {
 }
 
 @media screen and (max-width: 700px) {
+  .cont-titulo {
+    text-align: center;
+  }
   body {
     background-position-x: 300px;
     background-position-y: 0px;
@@ -441,7 +473,7 @@ footer ul li i:hover {
     font-size: 3rem;
   }
   .cont-formulario {
-    margin-top: -30px;
+    margin-top: 0px;
   }
 }
 /*# sourceMappingURL=style.css.map */

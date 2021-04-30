@@ -34,7 +34,15 @@ nav{
     margin-left: 7%;
 }
  
-
+.imgvota{
+    width: 70%;
+    height: auto;
+    margin: 5% 0;
+    img{
+        width: 100%;
+        height: auto;
+    }
+}
 .cont-titulo {
 
     display: block;
@@ -54,7 +62,8 @@ nav{
         display: block;
         width: 100%;
         height: 100%;
-        background: linear-gradient(to left,blue, red, yellow);
+        background: -webkit-gradient(linear, left top, right top, from(#158CCC), color-stop(#158CCC), color-stop(red), color-stop(#FBBA15), to(#FBBA15));
+        background: linear-gradient(to right, #158CCC, #158CCC, red, #FBBA15, #FBBA15);
         mix-blend-mode: screen; //<-- atento a esta linea//
         position: absolute;
         top: 0;
@@ -362,6 +371,9 @@ footer {
     } 
 }
 @media screen and (max-width:700px){
+    .cont-titulo{
+        text-align: center;
+    }
     body{
         background-position-x: 300px;
         background-position-y: 0px;
